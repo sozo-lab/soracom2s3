@@ -6,3 +6,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON  CACHE BOOL   "version required")
 set(CMAKE_CXX_EXTENSIONS        OFF CACHE BOOL   "compiler extension")
 
 add_executable(data_converter src/data_converter.cpp)
+add_executable(remove_escape src/remove_escape.cpp)
