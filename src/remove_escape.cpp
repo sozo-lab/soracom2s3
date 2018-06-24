@@ -38,8 +38,8 @@ int main()
 
     for (const auto& target_str : targets) {
       if (const auto found_pos {s.find(target_str)}; found_pos != decltype(s)::npos) {
-        s[found_pos + target_str.size()] = '\0'; // delete " as start string
-        s[s.size() - 2] = '\0'; // delete " as end string
+        s.erase(found_pos + target_str.size(), 1); // delete " as start string
+        s.erase(s.size() - 2, 1); // delete " as end string
         s.erase(remove(s.begin(), s.end(), '\\'), s.end()); // delete all escape charactor
         break;
       }
