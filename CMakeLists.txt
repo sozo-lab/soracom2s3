@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD          17  CACHE STRING "CXX standard version")
 set(CMAKE_CXX_STANDARD_REQUIRED ON  CACHE BOOL   "version required")
 set(CMAKE_CXX_EXTENSIONS        OFF CACHE BOOL   "compiler extension")
 
-add_executable(date_collector src/date_collector.cpp)
+add_executable(analize_data   src/analize_data.cpp)
 add_executable(data_converter src/data_converter.cpp)
+add_executable(date_collector src/date_collector.cpp)
 add_executable(remove_escape  src/remove_escape.cpp)
